@@ -1,0 +1,133 @@
+/* Estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(270deg, #ffffff, #709ca8, #0088ff, #7ce3ff);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+
+
+header {
+    background-color:black;
+    padding: 10px 0;
+    text-align: center;
+    position:0;
+    width: 100%;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+   
+}
+
+#espaco{
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #0d2bc1;
+    transition: 0.7s;
+    
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+#sobre-mim img {
+    max-width: 250px;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#mais{
+    font-size: 1.5rem;
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+  
+}
+
+/* Projetos */
+.projetos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.projeto {
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.imgs{
+    height: 10rem;
+    width: 10rem;
+}
+
+#final{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:15px;
+}
+
+
+/* Animações */
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
