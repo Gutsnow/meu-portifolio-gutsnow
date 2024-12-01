@@ -28,68 +28,177 @@
     </section>
 
     <section id="sobre-mim" class="section fade-in">
+        
         <h2>Sobre Mim</h2>
         <img src="/imagens/Imagem do WhatsApp de 2024-08-19 à(s) 19.37.10_219741d5.jpg" alt="Minha Foto de Perfil">
-        <p>Olá! meu nome é Gustavo, um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>
-        <p>Atualmente, estou no terceiro semestre da faculdade, onde tive a oportunidade de participar de diversos projetos práticos.</p>
+        
+        <div class="sobre-mim-p">
+            <b class="mim">Olá! meu nome é Gustavo</b>
+        </div>
+
+ 
+        <button id="curriculo" class="button">Curriculo</button>
+        
+
+        <p class="escrita">Atualmente, estou no quarto semestre da faculdade, onde tive a oportunidade de participar de diversos projetos práticos além dos projetos pessoais.</p>
         <br>
-        <p><b>Minhas habilidades:</b>UX/UI Desing,Desenvolvimento web,Gestão de projetos,Controle de versionamento de códigos</p>
+       
+        <div id="skils">
+            <div class="card p">
+                <p class="escrita"><b>Soft Skils</b>
+                <ul class="card-dentro">
+                    <div id="sessao-soft">
+                        <li>
+                            <img src="./imagens/organizar.jpg" class="img-soft" alt="notas">
+                        <p class="letreiro-soft">Organização</p>
+                        </li>
+                        <li>
+                            <img src="./imagens/comunicacao.jpg" class="img-soft" alt="conversa">
+                            <p class="letreiro-soft">Comunicação</p>
+                        </li>
+
+                        <li>
+                            <img src="./imagens/flexivel.jpg" class="img-soft" alt="multi tarefas">
+                            <p class="letreiro-soft">Flexibilidade</p>
+                        </li>
+
+                        <li>
+                            <img src="./imagens/equipe.jpg" class="img-soft" alt="equipe">
+                            <p class="letreiro-soft">Trabalho em equipe</p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        
+            <div class="card p">
+                <p class="escrita"><b>Hard Skils</b>
+            <ul class="card-dentro">
+                <div id="sessao-hard">
+                    <li>
+                        <img src="./Icones/html.png" class="img-hard" alt="html">
+                    <p class="letreiro-soft">Html</p>
+                    </li>
+                    <li>
+                        <img src="./Icones/css.png" class="img-hard" alt="css">
+                        <p class="letreiro-soft">Css</p>
+                    </li>
+
+                    <li>
+                        <img src="./Icones/javascript.png" class="img-hard" alt="Javascript">
+                        <p class="letreiro-soft">Javascript</p>
+                    </li>
+
+                    <li>
+                        <img src="./Icones/python.png" class="img-hard" alt="ptyhon">
+                        <p class="letreiro-soft">Python</p>
+                    </li>
+
+                    <li>
+                        <img src="./Icones/sql-server.png" class="img-hard" alt="sql">
+                        <p class="letreiro-soft">SQL Server</p>
+                    </li>
+
+                    <li>
+                        <img src="./Icones/react.png" class="img-hard" alt="react">
+                        <p class="letreiro-soft">React</p>
+                    </li>
+
+                </div>
+            </ul>
+        </div>
+    </div>
+        <p class="escrita"><h2 id="sobre-extra">Habilidades extras:</h2>UX/UI Desing, pacote office, Gestão de projetos, Controle de versionamento de códigos: Git / Github</p>
     </section>
+
+
         <!-- PROJETOS -->
     <section id="projetos" class="section fade-in">
         <h2>Projetos</h2>
         <div class="projetos-container">
-            <div class="projeto">
-                <h3>Projeto 1</h3>
-                <img class="imgs" src="/imagens/Imagem do WhatsApp de 2024-07-17 à(s) 17.55.26_fb2dfb40.jpg" alt="">
-                <br>
-                <b>Logo personalizada</b>
-                <p>Esse foi um projeto que fiz para um comerciante local. </p>
-            </div>
-            <div class="projeto">
-                <h3>Projeto 2</h3>
-                <img class="imgs" src="/imagens/Captura de Tela (37).png" alt="">
-                <b>Imagem personalizada</b>
-                <br>
-                <p>Esse foi um projeto de desing que fiz para um amigo.</p>
+                <a href="https://github.com/Gutsnow/RepoCat">
+                <div class="projeto">
+                    <h3 class="letras-projeto">Projeto 1</h3>
+                    <img class="imgs" src="./imagens/repocat.png" alt="">
+                    <br>
+                    <b class="letras-projeto">RepoCat</b>
+                    <p class="letras-projeto">Um projeto localizador de repositórios no Github, feito com React e Javascript </p>
+                </div>
+        </a>
 
-            </div>
-            <div class="projeto">
-                <h3>Projeto 3</h3>
-                <img class="imgs" src="/imagens/Captura de Tela (35).png" alt="">
-                <b>Projeto Web</b>
-                <br>
-                <p>Um simples projeto web desenvolvido recentemente.</p>
-            </div>
+            <a href="https://github.com/Gutsnow/check-to-buy">
+                <div class="projeto">
+                    <h3 class="letras-projeto">Projeto 2</h3>
+                    <img class="imgs" src="./imagens/listaCompras.png" alt="">
+                    <br>
+                    <b class="letras-projeto"> check to buy </b>
+                    <p class="letras-projeto">Essa é uma lista de compras desenvolvida com Javascript.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Gutsnow/Atletas_do_Brasil">
+                <div class="projeto">
+                    <h3 class="letras-projeto">Projeto 3</h3>
+                    <img class="imgs" src="/imagens/Captura de Tela (35).png" alt="">
+                    <b class="letras-projeto">Projeto Web</b>
+                    <br>
+                    <p class="letras-projeto">Um projeto mostrando os principais atletas das olimpíadas.</p>
+                </div>
+            </a>
         </div>
-        <a id="mais" href="https://github.com/Gutsnow" target="_top"><b>Veja mais sobre meus projetos</b></a>
+
+        <button id="curriculo" class="button segundo">
+            <a id="mais" href="https://github.com/Gutsnow" target="_top"><b>Veja mais sobre meus projetos</b></a>
+        </button>
     </section>
-    <!-- CONTATOS -->
-    <section id="contato" class="section fade-in">
-        <h2>Contatos</h2>
-        <p>Entre em contato comigo pelos seguintes canais:</p>
-        <ul>
-            <li>Email: <a href="mailto:binho.neves.gn@gmail.com<">binho.neves.gn@gmail.com</a></li>
-            <li>Telefone: (19) 99535-2238</li>
-        </ul>
 
-        <div id="final">
-            <a href="https://api.whatsapp.com/send?phone=5519995352238&text=Ol%C3%A1,%20eu%20vim%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio!" target="_top">
-                <img id="icone_what" src="/Icones/bxl-whatsapp.svg" alt="icone do whatsapp">
-            </a>
-            <a href="https://linkedin.com/in/gustavo-neves-7b4141290" target="top">
-                <img id="icone_link" src="/Icones/bxl-linkedin.svg" alt="icone do linkedin">
-            </a>
-        
-            <a href="https://github.com/Gutsnow" target="top">
-                <img id="icone_git" src="/Icones/bxl-github.svg" alt="icone do github">
-            </a>
+     <!-- CARROSEL -->
+        <div id="outros">
+            <h2>Outros Projetos</h2>
         </div>
+     <div id="carrosel">
+         <div class="carousel">
+            <button class="carousel-button prev">❮</button>
+            <div class="carousel-track">
+            <div class="carousel-item"><img src="./imagens/Captura de Tela (37).png" alt="Slide 1"></div>
+            <div class="carousel-item"><img src="./imagens/Captura de Tela (35).png" alt="Slide 2"></div>
+            <div class="carousel-item"><img src="./imagens/Imagem do WhatsApp de 2024-07-17 à(s) 17.55.26_fb2dfb40.jpg" alt="Slide 3"></div>
+            </div>
+            <button class="carousel-button next">❯</button>
+            <div class="carousel-indicators">
+            <button data-index="0" class="active"></button>
+            <button data-index="1"></button>
+            <button data-index="2"></button>
+            </div>
+        </div>
+    </div>
 
+    <!-- CONTATOS -->
+
+    <div class="final-caixa">
+    <section id="contato" class="section fade-in">
+            <h2>Contatos</h2>
+            <p>Entre em contato comigo pelos seguintes canais:</p>
+            <ul>
+                <li class="contatos">Email: <a href="mailto:binho.neves.gn@gmail.com<">binho.neves.gn@gmail.com</a></li>
+                <li class="contatos">Telefone: (19) 99535-2238</li>
+            </ul>
+
+            <div id="final">
+                <a href="https://api.whatsapp.com/send?phone=5519995352238&text=Ol%C3%A1,%20eu%20vim%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio!" target="_top">
+                    <img id="icone_what" src="/Icones/bxl-whatsapp.svg" alt="icone do whatsapp">
+                </a>
+                <a href="https://linkedin.com/in/gustavo-neves-7b4141290" target="top">
+                    <img id="icone_link" src="/Icones/bxl-linkedin.svg" alt="icone do linkedin">
+                </a>
+            
+                <a href="https://github.com/Gutsnow" target="top">
+                    <img id="icone_git" src="/Icones/bxl-github.svg" alt="icone do github">
+                </a>
+            </div>
+        </div>
     </section>
         <!-- FOOTER -->
     <footer>
-        <p>&copy; Todos os direitos reservados.</p>
+        <p></p>
     </footer>
 
     <script src="/script.js"></script>

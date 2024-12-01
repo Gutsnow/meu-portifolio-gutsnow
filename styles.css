@@ -63,6 +63,84 @@ nav ul li a:hover {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
+.sobre-mim-p{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.mim{
+    font-family: monospace;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255);
+    width: 25ch;
+    border-right: 4px solid blue;
+    border-radius: 5px;
+    animation:escrevendo 0.7s linear infinite, animacao steps(15) 2s;
+    overflow:hidden;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    height: auto;
+    font-size: 40px;
+}
+
+.button{
+    background-color: #f3f7fe;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: 0.2s;
+    margin-bottom: 15px;
+    font-size: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+
+  .segundo{
+    height: 50px;
+    width: 40%;
+  }
+  
+
+.escrita{
+    font-size: 30px;
+    font-weight: 400;
+}
+#skils{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#sessao-soft{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.card{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow:  0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+.card-dentro{
+    list-style-type: none;
+    
+  }
+
 #mais{
     font-size: 1.5rem;
     color: black;
@@ -71,12 +149,40 @@ nav ul li a:hover {
   
 }
 
-/* Projetos */
-.projetos-container {
+.img-soft{
+    width: 200px;
+    height: 130px;
+}
+
+.letreiro-soft{
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#sessao-hard{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+
+}
+
+.img-hard{
+    width: 100%;
+    height: 140px;
+}
+
+#sobre-extra{
+    margin-top: 20px;
+}
+
+/* Projetos */
+.projetos-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 20px;
+    
 }
 
 .projeto {
@@ -86,6 +192,12 @@ nav ul li a:hover {
     width: 250px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
 }
 
 footer {
@@ -107,6 +219,26 @@ footer {
     flex-direction: row;
     justify-content:center;
     gap:15px;
+    
+}
+
+#contato{
+    background-color: #f4f4f4;
+    
+    width: 90%;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.final-caixa{
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.contatos{
+    list-style-type: none;
+    text-decoration:underline;
 }
 
 
@@ -118,6 +250,15 @@ footer {
     100% { background-position: 0% 50%; }
 }
 
+@keyframes escrevendo {
+    50%{border-right: transparent;
+    }
+  }
+
+  @keyframes animacao {
+    0%{ width: 0;}
+   }
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -128,6 +269,127 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+@media(max-width:900px){
+    .mim{
+        border: 1px solid transparent;
+        background-color: aliceblue;
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        font-size: 22px;
+        border-right: 4px solid blue; 
+}
+
+.carousel-item img{
+    height: 100px;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .segundo{
+    height: auto;
+    width: 40%;
+  }
+}
+
+
+/* CARROSEL */
+
+#carrosel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    }
+
+
+   #outros{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+   } 
+.carousel {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+  }
+
+  /* Botões de Navegação */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-button.prev {
+    left: 10px;
+  }
+
+  .carousel-button.next {
+    right: 10px;
+  }
+
+  /* Indicadores */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .carousel-indicators button {
+    background-color: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .carousel-indicators button.active {
+    background-color: #333;
+  }
 
 
 
